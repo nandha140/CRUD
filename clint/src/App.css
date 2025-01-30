@@ -1,0 +1,338 @@
+body {
+    background-image: linear-gradient(to right, rgb(103, 646, 204, 9), rgb(255, 204, 153, 1));
+  }
+  
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .display-users {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+button {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   margin:10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-del {
+    background-color: #e74c3c; /* Red color */
+    color: white;
+  }
+  
+  .btn-del:hover {
+    background-color: #c0392b; /* Darker red */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  /* EDIT Button */
+  button:not(.btn-del) {
+    background-color: #3498db; /* Blue color */
+    color: white;
+  }
+  
+  button:not(.btn-del):hover {
+    background-color: #2980b9; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #f2f2f2;
+  }
+  
+  th,
+  td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    thead {
+      display: none;
+    }
+  
+    tbody tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+    }
+  
+    tbody td {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+  
+    tbody td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      flex: 1;
+      text-align: left;
+    }
+  
+    .btn,
+    .btn-del {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+/* General Styles */
+
+
+
+body {
+  background-image: linear-gradient(to right, rgb(103, 646, 204, 9), rgb(255, 204, 153, 1));
+}
+
+.update-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+ 
+  padding: 20px;
+}
+
+.update-form {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgb(76, 175, 80, 0.3);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .update-form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+
+
+body {
+  background-image: linear-gradient(to right, rgb(255, 182, 193), rgb(193, 225, 255));
+}
+
+
+
+
+
+.register-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #f4f4f4; */
+  padding: 20px;
+}
+
+.register-form {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 5px rgb(76, 175, 80, 0.3);
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .register-form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  input {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+
+  input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
